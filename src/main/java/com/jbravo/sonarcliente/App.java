@@ -26,7 +26,6 @@ public class App {
 
 		final Sonar sonar = Sonar.create("http://nemo.sonarsource.org");
 
-
 		final List<Metric> metrics = sonar.findAll(MetricQuery.all());
 
 		for (final Metric metric : metrics) {
